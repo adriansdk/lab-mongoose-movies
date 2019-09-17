@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white; }
+
+.navbar {
+  background-color: white; }
+  .navbar .container-fluid {
+    width: 85%; }
+  .navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 30px; }
+  .navbar .nav-link,
+  .navbar .navbar-brand {
+    color: black; }
+  .navbar .nav-link:hover,
+  .navbar .navbar-brand:hover {
+    color: red; }
+  .navbar .fas {
+    color: black;
+    font-size: 30px; }
+  .navbar .fas:hover {
+    color: red; }
+
+.home {
+  height: 100vh;
+  text-shadow: 2px 2px black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("http://www.winwallpapers.net/w1/2013/10/Cidade-de-Deus-Movie.jpg"); }
+  .home .container-fluid {
+    width: 85%; }
+  .home .header {
+    padding-top: 100px; }
+    .home .header h1 {
+      font-weight: bold;
+      font-size: 45px; }
+    .home .header p {
+      font-size: 25px; }
+
+/*# sourceMappingURL=style.css.map */
