@@ -38,4 +38,13 @@ body {
     .home .header p {
       font-size: 25px; }
 
+.movies {
+  height: 100vh;
+  background-color: red;
+  display: flex; }
+  .movies .card {
+    width: 33%;
+    height: 200px;
+    display: flex; }
+
 /*# sourceMappingURL=style.css.map */

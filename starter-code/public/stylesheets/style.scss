@@ -60,5 +60,13 @@ body {
 }
 
 .movies{
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  .card{
+    width: 33%;
+    height: 200px;
+    display:flex;
+  }
   
 }

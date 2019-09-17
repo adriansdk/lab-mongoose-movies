@@ -1,11 +1,14 @@
 <div class="movies">
-
     <h1>Movie list:</h1>
-    <ul>
-    {{#each allMovies}}
-    <a href="/movies/details/{{this._id}}">{{this.title}}</a>
-    {{/each}}
-    <button><a href="/movies/new-movie">Create new movie</a></button>
-    </ul>
-
+        {{#each allMovies}}
+        <div class="card">
+            <img src="{{this.cover}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{this.title}}</h5>
+                <p class="card-text">{{this.plot}}</p>
+                <a  class="btn btn-primary" href="/movies/details/{{this._id}}">See Details</a>
+            </div>
+        </div>
+        {{/each}}
+        {{!-- <button><a href="/movies/new-movie">Create new movie</a></button> --}}
 </div>

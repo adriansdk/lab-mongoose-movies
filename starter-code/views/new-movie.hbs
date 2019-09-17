@@ -1,20 +1,24 @@
-<h1>Create a new movie:</h1>
+<div class="movies-list">
+    <h1>Create a new movie:</h1>
+    <form action="/new-movie/creation" method="POST">
+        <p>Choose new Movie title:</p>
+        <input type="text" name="movieTitle" placeholder="Movie name">
 
-<form action="/new-movie/creation" method="POST">
-    <p>Choose new Movie title:</p>
-    <input type="text" name="movieTitle" placeholder="Movie name">
+        <p>Choose new Movie genre:</p>
+        <input type="text" name="movieGenre" placeholder="Movie Genre">
 
-    <p>Choose new Movie genre:</p>
-    <input type="text" name="movieGenre" placeholder="Movie Genre">
+        <p>Choose new Movie Plot:</p>
+        <input type="text" name="moviePlot" placeholder="Movie Plot">
 
-    <p>Choose new Movie Plot:</p>
-    <input type="text" name="moviePlot" placeholder="Movie Plot">
+        <p>Add a movie cover.</p>
+        <input type="text" name="movieCover" placeholder="Movie Cover Url">
 
-    <p>Movie Star</p>
-    <select name="movieStar">
-        {{#each AllCelebrities}}
+        <p>Movie Star</p>
+        <select name="movieStar">
+            {{#each AllCelebrities}}
             <option value="{{this._id}}"> {{this.name}}</option>
-        {{/each}}
-    </select>
-    <button>Create!</button>
-</form>
+            {{/each}}
+        </select>
+        <button>Create!</button>
+    </form>
+</div>
